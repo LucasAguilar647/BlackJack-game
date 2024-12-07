@@ -1,0 +1,56 @@
+html, body {
+    margin: 0px;
+    background-color: #2F4F30;
+    color: white;;
+  }
+
+.game-section{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .game-section button {
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .game-section button:hover {
+    background-color: #333;
+  }
+
+  .titulo {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+  }
+
+  .cartas-section{
+    display: flex;
+    justify-content: column;
+    border: #333 solid 1px;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #333;
+    gap: 50px;
+  }
+  
+  .carta img {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+  }
+  
+  #computadora-cartas, #jugador-cartas {
+    height: 240px;
+  }
