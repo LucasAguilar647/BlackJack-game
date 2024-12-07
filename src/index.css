@@ -12,7 +12,9 @@ html, body {
     height: 100vh;
   }
   
-  .game-section button {
+  .game-buttons{
+    display: flex;
+    gap: 20px;
     padding: 10px;
     font-size: 20px;
     margin: 10px;
@@ -35,13 +37,12 @@ html, body {
   }
 
   .cartas-section{
-    display: flex;
-    justify-content: column;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
     border: #333 solid 1px;
     align-items: center;
     padding: 10px;
     margin: 10px;
-    background-color: #333;
     gap: 50px;
   }
   
@@ -49,6 +50,7 @@ html, body {
     width: 100px;
     height: 150px;
     margin: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
   }
   
   #computadora-cartas, #jugador-cartas {
