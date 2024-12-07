@@ -1,3 +1,5 @@
+import { verificarPuntos } from "./verificarPuntos";
+
 export const calcularPuntos = (deck, jugador,setPuntosJugador1,setPuntosJugador2) => {
     let puntos = 0;
     deck.forEach((carta) => {
@@ -15,7 +17,9 @@ export const calcularPuntos = (deck, jugador,setPuntosJugador1,setPuntosJugador2
 
     if (jugador === 1) {
       setPuntosJugador1(puntos);
+      verificarPuntos(puntos);
     } else if (jugador === 2) {
       setPuntosJugador2(puntos);
+      verificarPuntos(puntos);
     }
   };

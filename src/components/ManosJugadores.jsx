@@ -8,6 +8,7 @@ export const ManosJugadores = ({ jugador, deck }) => {
 
   useEffect(() => {
     calcularPuntos(deck, jugador, setPuntosJugador1, setPuntosJugador2);
+    
   }, [deck, jugador]); 
 
   
