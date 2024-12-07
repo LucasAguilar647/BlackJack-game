@@ -13,10 +13,10 @@ export const ManosJugadores = ({ jugador, deck }) => {
   
 
   return (
-    <section>
+    <section >
       <h2>Jugador {jugador}</h2>
       <h3>Puntos: {jugador === 1 ? puntosJugador1 : puntosJugador2}</h3>
-      <div>
+      <div className='mano-jugador-section'>
         {deck.map((carta, index) => (
           <div key={index}>
             <TarjetaImg carta={carta} />

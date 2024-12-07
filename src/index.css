@@ -2,14 +2,14 @@ html, body {
     margin: 0px;
     background-color: #2F4F30;
     color: white;;
+    font-family: 'Roboto', sans-serif;
   }
 
 .game-section{  
+    height: 50vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    height: 100vh;
+    align-items: center;
   }
   
   .game-buttons{
@@ -28,29 +28,16 @@ html, body {
     background-color: #333;
   }
 
-  .titulo {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    font-size: 25px;
-  }
-
-  .cartas-section{
-    display: grid;
-    grid-template-columns: repeat(2, 250px);
-    border: #333 solid 1px;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    gap: 50px;
-  }
-  
   .carta img {
     width: 100px;
     height: 150px;
-    margin: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.75);
+  }
+
+  .mano-jugador-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    gap: 10px;
   }
   
   #computadora-cartas, #jugador-cartas {
