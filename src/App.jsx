@@ -40,12 +40,11 @@ function App() {
         <ManosJugadores jugador={1} deck={cartasJugador1} />
         <ManosJugadores jugador={2} deck={cartasJugador2} />
       </div>
-      <div className='game-buttons'>
+      <section className='game-buttons'>
         <button onClick={nuevoJuego}>Nuevo Juego</button>
         <button onClick={repartirCartas}>Repartir</button>
         <button onClick={pedirCarta} >Pedir</button>
-
-      </div>
+      </section>
 
     </div>
   )
