@@ -16,7 +16,7 @@ const router = createBrowserRouter([
 
 ],
     {
-        basename: '/BlackJack'
+        basename: '/BlackJack-game'
     }
 )
 
