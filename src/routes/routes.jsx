@@ -1,18 +1,27 @@
 import React from 'react'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Game from '../pages/Game'
+import { Principal } from '../pages/Principal'
 
 
-const router= createBrowserRouter([
+const router = createBrowserRouter([
     {
-        path:'/Blackjack',
-        element: <Game/>
+        path: '/',
+        element: <Principal />
     },
+    {
+        path: '/Game',
+        element: <Game />
+    }
 
-])
+],
+    {
+        basename: '/BlackJack'
+    }
+)
 
 export const MyRoutes = () => {
-  return (
-    <RouterProvider router={router}  />
-  )
+    return (
+        <RouterProvider router={router} />
+    )
 }

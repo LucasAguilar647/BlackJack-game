@@ -12,7 +12,7 @@ export const Game = () => {
     const [puntosJugador1, setPuntosJugador1] = useState(0);
     const [puntosJugador2, setPuntosJugador2] = useState(0);
   
-    const nuevoJuego = () => {
+    const handleNuevoJuego = () => {
       fetchMazo(setMazoMezclado);
       repartirCartas();
     };
@@ -38,7 +38,7 @@ export const Game = () => {
   
     return (
       <div className="game-section">
-        <h1>Blackjack</h1>
+        
         <div className="cartas-section">
           <ManosJugadores
             jugador={1}
@@ -68,7 +68,7 @@ export const Game = () => {
           />
         </div>
         <section className="game-buttons">
-          <button onClick={nuevoJuego}>Nuevo Juego</button>
+          <button onClick={handleNuevoJuego}>Nuevo juego</button>
           <button onClick={pedirCartaJugador}>Pedir</button>
         </section>
       </div>
