@@ -2,7 +2,7 @@ import { mezclarMazo } from "./mezclarMazo";
 
 export const fetchMazo = async (setMazo) => {
     try {
-        const response = await fetch("/assets/mazo/mazo.json");
+        const response = await fetch("assets/mazo/mazo.json");
         if (!response.ok) {
             throw new Error("Error al cargar el mazo");
         }

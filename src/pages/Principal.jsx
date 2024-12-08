@@ -16,7 +16,6 @@ export const Principal = () => {
             <button onClick={handleComenzar}>Comenzar</button>
         </section>
 
-
     </div>
   )
 }
